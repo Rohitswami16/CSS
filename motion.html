@@ -1,0 +1,56 @@
+<!-- a webpage with a single animated, circular div element that moves in a square path across the screen while changing colors. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Styling for a div with circular shape, animation, and position */
+        div {
+            border: 2px solid black;
+            height: 300px;
+            width: 300px;
+            border-radius: 150px;
+            animation-name: moveout;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            position: absolute;
+        }
+        
+        /* Keyframes for the moveout animation */
+        @keyframes moveout {
+            0% {
+                top: 0%; left: 0%;
+                background-color: blueviolet;
+            }
+        
+            25% {
+                top: 0px; left: 400px;
+                background-color: blue;
+            }
+        
+            50% {
+                top: 400px; left: 400px;
+                background-color: aquamarine;
+            }
+        
+            75% {
+                top: 400px; left: 0px;
+                background-color: chartreuse;
+            }
+        
+            100% {
+                top: 0px; left: 0px;
+                background-color: blueviolet;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- A circular div element that animates according to the moveout keyframes -->
+    <div></div>
+</body>
+</html>
+
